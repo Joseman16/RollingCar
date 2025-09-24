@@ -1,18 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leyendas del Deporte</title>
-</head>
-<body>
+    <link rel="stylesheet" href="estilo/estilo.css" />
+    <link rel="stylesheet" href="estilo/efecto1.css" />
+    <link rel="stylesheet" href="estilo/efecto2.css">
+  </head>
+  <body class="principal">
     <!-- Header -->
-     <section>
+    <section class="encabezado">
+      <div id="enbzIzquierdo">
+        <img
+          id="logoIz"
+          alt="logo"
+          height="55px"
+          width="55px"
+          src="img/rolling-car-high-resolution-logo.png"
+        />
+      </div>
+
+      <div>
+        <nav id="listaNav">
+          <li id="lis">🏠Inicio</li>
+          <li id="lis">📚Catalogo</li>
+          <li id="lis">📱Información</li>
+          <li id="lis">👀Acerca De</li>
+        </nav>
+      </div>
+      <div class="enbzDerecho">
         <div>
-            <img
-            
-            src="">
+          <img />
         </div>
-     </section>
-</body>
+        <!-- lo encapsule en un div para darle un difuminado -->
+        <div id="difuGit">
+          <img
+            id="gifDerecha"
+            alt="gif"
+            height="60px"
+            width="95px"
+            src="img/carLogo2.gif"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="pagPrincipal">
+      <video autoplay muted loop playsinline class="video-fondo">
+        <source src="video/260336_medium.mp4" type="video/mp4" />
+        Tu navegador no soporta el video.
+      </video>
+      <div class="gallery">
+        <img
+          src="https://thumbs.dreamstime.com/b/colorida-ilustraci%C3%B3n-de-una-mujer-con-casco-piloto-vintage-y-gafas-que-evocan-un-sentido-aventura-387217855.jpg"
+          alt="a wolf"
+        />
+        <img
+          src="https://us.123rf.com/450wm/stockee/stockee2309/stockee230932846/214143779-the-motorcycle-rider-wearing-a-helmet-stands-out-in-a-striking-combination-of-black-and-orange.jpg?ver=6"
+          alt="a lioness"
+        />
+      </div>
+      <div class="btnPrincipal">
+        <div id="btnPrincipal2">
+            <a><b>Ver más</b></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="galeria">
+        <div id="imgGaleria">
+            <img
+            id="imgGaleria"
+            height="290px"
+            width="210px"
+            alt="ferrari"
+            src="https://i.pinimg.com/736x/5a/c5/e7/5ac5e7a02201aa54ab1804bcbf07bc4a.jpg">
+        
+            <img
+            id="imgGaleria"
+            height="290px"
+            width="210px"
+            alt="toyota"
+            src="https://pressroom-manager.toyota.mx/storage/noticias/355/Akio%20Toyoda.jpg">
+            
+            <img
+            id="imgGaleria"
+            height="290px"
+            width="210px"
+            alt="img3"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Henry_ford_1919.jpg/960px-Henry_ford_1919.jpg">
+            
+            <img
+            id="imgGaleria"
+            height="290px"
+            width="210px"
+            alt="img4"
+            src="https://fotos.perfil.com/2022/02/15/el-20-de-febrero-de-1993-murio-ferruccio-lamborghini-constructor-italiano-de-automoviles-1313111.jpg">
+        </div>
+    </section>
+
+  </body>
 </html>

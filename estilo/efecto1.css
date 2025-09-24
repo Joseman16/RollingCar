@@ -1,0 +1,52 @@
+.gallery {
+  --g: 8px; /* the gap */
+  z-index: 1;
+  
+  display: grid;
+  clip-path: inset(1px); /* to avoid visual glitchs */
+}
+.gallery > img {
+  --_p: calc(-1*var(--g));
+  grid-area: 1/1;
+  width: 500px; /* control the size */
+  aspect-ratio: 1;
+  cursor: pointer;
+  transition: .4s .1s;
+}
+.gallery > img:first-child {
+  clip-path: polygon(0 0, calc(100% + var(--_p)) 0 , 0 calc(100% + var(--_p)))
+}
+.gallery > img:last-child {
+  clip-path: polygon(100% 100%, 100% calc(0% - var(--_p)), calc(0% - var(--_p)) 100%)
+}
+.gallery:hover > img:last-child,
+.gallery:hover > img:first-child:hover{
+  --_p: calc(50% - var(--g));
+}
+.gallery:hover > img:first-child,
+.gallery:hover > img:first-child:hover + img{
+  --_p: calc(-50% - var(--g));
+}
+.video-fondo{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover; 
+  position: absolute;
+  z-index: -1;
+  padding: 10px;
+}
+
+
+.pagPrincipal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding: 30px;
+  min-height: 100vh; /* en lugar de height */
+  overflow: visible; /* permite que el contenido se muestre */
+}

@@ -1,0 +1,3 @@
+npm install -g sass
+sass --version
+sass input.scss output.css
