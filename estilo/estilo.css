@@ -106,3 +106,99 @@
     display: flex;
     flex-direction: row;
 }
+
+/***************Efecto para imagenes****************/
+
+.imgGaleria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.caja_1 {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    -webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+.caja_1 img {
+    border-radius: 10px;
+    height: 290px;
+    width: 210px;
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.caja_1 .ovrly {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    position: absolute;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.caja_1 .buttons {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.caja_1 .buttons .fa {
+    margin: 0 1px;
+    background: black;
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    border-radius: 10%;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+}
+.caja_1:hover .buttons {
+    top: 50%;
+}
+.caja_1:hover .ovrly {
+    top: 0;
+}
+
+
+/******************Darle borde con una image**************/
+
+.mensaje{
+    filter: drop-shadow(0 0 15px rgba(12, 73, 135, 0.836));
+}
+.element {
+  border: 60px solid transparent;             /* Activa el borde */
+  border-image-source: url("../img/borde3.png");
+  border-image-slice: 40;                     /* Corta la imagen en 9 partes (ajústalo a tu PNG) */
+  border-image-width: 40px;
+  border-image-repeat: stretch;               /* Usa stretch para que se adapte mejor */
+  border-image-outset: 0;                     /* Sin desplazar el borde */
+  width: 700px;                               /* Más ancho para ver el efecto */
+  padding: 20px;                             /* Espacio interno */
+  box-sizing: border-box;
+  background-color: #000000;                     /* Fondo para destacar el texto */
+  color: #ffffff;                                /* Texto legible */
+}

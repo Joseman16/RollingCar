@@ -28,7 +28,7 @@
   --_p: calc(-50% - var(--g));
 }
 .video-fondo{
-  width: 100%;
+  width: 98%;
   height: 100%;
   top: 0;
   left: 0;
