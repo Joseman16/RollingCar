@@ -32,6 +32,25 @@
     animation-iteration-count: infinite;
 }
 
+#logoIz{
+    height: 55px;
+    width: 55px;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../img/rolling-car-high-resolution-logo.png');
+}
+#logoIz:hover{
+    height: 55px;
+    width: 55px;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../img/rolling-car-high-resolution-logo-grayscale.png');
+}
+
 @keyframes myAnimationLogo {
   0%   {filter: drop-shadow(0 0 5px rgba(0, 217, 255, 0.836)); }
   25%  {filter: drop-shadow(0 0 5px rgba(42, 255, 209, 0.836)); }
